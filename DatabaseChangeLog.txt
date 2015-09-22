@@ -1,7 +1,7 @@
 database change log
 
 
-09/20/2015
+09/20/2015 Zhe Chen
 parcel: added ProjectAttachment table linked to project, one project can have multiple                 ProjectAttachment
 
 parcel :added Comment column to project table
@@ -9,10 +9,18 @@ parcel :added Comment column to project table
 parcel: added ClientCompanyID to project table
 
 
-09/18/2015
+09/18/2015 Zhe Chen
 
-Collateral360 : remove the table CompanyProperty, add all the field it has to PropertyService and change the table name to CompanyPropertyService.
+Collateral360 : remove the table CompanyProperty, add all the field it has to PropertyService and                 change the table name to CompanyPropertyService.
                   1. add default flag called IsDefault
                   2. OwnerCompanyID is null for IsDefault=1
 
 reason: each property service is different towards each company even for the default action, non-default type service there is no point to seperate it out and have two sets of relationship. we'll just add a isDefault Flag. 
+
+
+09/21/2015 Zhe Chen
+
+PARCEL : changed the column type of the NumberOfBuilding in Property Table to VARCHAR(256)
+PARCEL : removed PortfolioID from report table
+PARCEL : added the foreign key constraint on report table for reportStatusID refer to                      ReportStatus.ReportStatusID
+PARCEL : Report Table changed add a column called OutToBid TINYINT
