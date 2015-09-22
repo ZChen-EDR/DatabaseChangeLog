@@ -24,3 +24,6 @@ PARCEL : changed the column type of the NumberOfBuilding in Property Table to VA
 PARCEL : removed PortfolioID from report table
 PARCEL : added the foreign key constraint on report table for reportStatusID refer to                      ReportStatus.ReportStatusID
 PARCEL : Report Table changed add a column called OutToBid TINYINT
+PARCEL : Report Table add column ReportDocument default null, and most other default value to          null please check the database for definite answer
+PARCEL : Report Table change the datatype of Fee to VARCHAR(256)
+PARCEL : change the column name of Base64 to FilePath
