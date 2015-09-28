@@ -30,4 +30,12 @@ PARCEL : change the column name of Base64 to FilePath
 
 
 09/28/2015
-COLLATERAL : add columns to Loan 1. LoanBorrower VARCHAR(256) 2.LoanNumber VARCHAR(256) 3.ApplicationNumber VARCHAR(256)
+COLLATERAL : add columns to Loan 1. LoanBorrower VARCHAR(256) 2.LoanNumber VARCHAR(256)                                          3.ApplicationNumber VARCHAR(256) 
+CoLATERAL : change column Address to VARCHAR(256), change column City to VARCHAR(256)
+            add ZipCode VARCHAR(45)
+COLLATERAL : add column 1.CreatedTimestamp timestamp default current_timestamp
+                        2.CreatedAccountID BIGINT
+                        3.MoifiedTimestamp timestamp default on_update current_timestamp
+                        4.ModifiedAccountID BIGINT 
+COLLATERAL :  change table name DraftServiceRequestForm to DraftServiceRequest, change Column     
+              DraftServiceRequestFormID to DraftServiceRequestID
