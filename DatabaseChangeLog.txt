@@ -27,3 +27,7 @@ PARCEL : Report Table changed add a column called OutToBid TINYINT
 PARCEL : Report Table add column ReportDocument default null, and most other default value to          null please check the database for definite answer
 PARCEL : Report Table change the datatype of Fee to VARCHAR(256)
 PARCEL : change the column name of Base64 to FilePath
+
+
+09/28/2015
+COLLATERAL : add columns to Loan 1. LoanBorrower VARCHAR(256) 2.LoanNumber VARCHAR(256) 3.ApplicationNumber VARCHAR(256)
